@@ -5,6 +5,7 @@ import {useParams} from "react-router-dom";
 import "./style.css"
 import img from "../../assets/imgs/img1.jpg";
 import {dictionaryImg} from "../../assets/dictionary";
+import ErrorBoundary from "../../components/Errors/ErrorBoundary";
 
 function AirportInfo(props) {
 
@@ -42,29 +43,39 @@ function AirportInfo(props) {
     const randomImg = dictionaryImg[randomIndex];
     return (
 
-        <div className="airportinfo">
-            <div className="itemContainer">
-                <h1>{res.name}</h1>
+        <ErrorBoundary>
+            {res ? (
+                <div>
+                    <div className="airportinfo">
+                        <div className="itemContainer">
+                            <h1>{res.name}</h1>
 
-                <div className="fullinfo">
-                    <h3>Full information</h3>
-                    <h5><b>Country: </b> {res.country}</h5>
-                    <h5><b>City:</b> {res.city}</h5>
-                    <h5><b>Region:</b> {res.region}</h5>
-                    <h5><b>Timezone:</b> {res.timezone}</h5>
-                    <div className="codec">
-                        <h5><b>iata:</b> {res.iata}</h5>
-                        <h5><b>icao:</b> {res.icao}</h5>
+                            <div className="fullinfo">
+                                <h3>Full information</h3>
+                                <h5><b>Country: </b> {res.country}</h5>
+                                <h5><b>City:</b> {res.city}</h5>
+                                <h5><b>Region:</b> {res.region}</h5>
+                                <h5><b>Timezone:</b> {res.timezone}</h5>
+                                <div className="codec">
+                                    <h5><b>iata:</b> {res.iata}</h5>
+                                    <h5><b>icao:</b> {res.icao}</h5>
+                                </div>
+
+                                <h5><b>lat/long:</b> {res.latitude}/{res.longitude}</h5>
+                            </div>
+
+                        </div>
+
+                        <img src={randomImg} alt="" />
+
                     </div>
-
-                    <h5><b>lat/long:</b> {res.latitude}/{res.longitude}</h5>
                 </div>
+            ) : (
+                <div className="loading"><b>L</b>oading...</div>
+            )}
+        </ErrorBoundary>
 
-            </div>
 
-            <img src={randomImg} alt="" />
-
-        </div>
     );
 }
 
