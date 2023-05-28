@@ -1,0 +1,42 @@
+.airportinfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemContainer{
+    margin: 50px;
+
+}
+
+.itemContainer h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.fullinfo{
+    margin-left: 20px;
+}
+
+.fullinfo h3{
+    margin-bottom: 15px;
+}
+
+.fullinfo h5{
+    margin-left: 10px;
+}
+
+.fullinfo h5 b{
+    color: blue;
+}
+
+.codec{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+
+}
+
+.airportinfo img{
+    margin: 60px;
+    max-width: 40%;
+}

@@ -1,0 +1,286 @@
+.flex-center-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #f8f9fa;
+}
+
+.img {
+  max-width: 100%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a,
+.button {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:focus,
+.button:focus, button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+
+a:focus {
+  text-decoration: none;
+}
+
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  text-decoration: none;
+}
+
+
+a,
+button {
+  color: #1F1F1F;
+  outline: medium none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Philosopher", sans-serif;
+  color: #001D38;
+}
+
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+li {
+  list-style: none;
+}
+
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #596672;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+label {
+  color: #7e7e7e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header-area .main-header-area {
+  background: #fff;
+  background: transparent;
+  padding: 0 !important;
+}
+
+.header-area .main-header-area .logo {
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+.navbar-brand h2{
+  font-size: 36px;
+}
+
+.navbar-brand h2 em{
+  color: red;
+}
+
+.header-area .main-header-area .main-menu {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.header-area .main-header-area .main-menu ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0 20px;
+}
+
+.header-area .main-header-area .main-menu ul li a {
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.header-area .main-header-area .main-menu ul li .submenu {
+  position: absolute;
+  left: 0;
+  top: 160%;
+  background: #fff;
+  width: 200px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.header-area .main-header-area .main-menu ul li .submenu li {
+  display: block;
+}
+
+.header-area .main-header-area .main-menu ul li .submenu li a {
+  padding: 10px 15px;
+  position: inherit;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  display: block;
+  color: #000;
+}
+
+
+.header-area .main-header-area .main-menu ul li .submenu li a::before {
+  display: none;
+}
+.header-area .main-header-area .main-menu ul li .submenu li:hover a {
+  color: #000;
+}
+
+.header-area .main-header-area .main-menu ul li:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 150%;
+}
+
+.header-area .main-header-area .main-menu ul li:hover > a::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.header-area .main-header-area .main-menu ul li:first-child a {
+  padding-left: 0;
+}
+
+.header-area .main-header-area.sticky {
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: -70px;
+  left: 0;
+  right: 0;
+  z-index: 990;
+  transform: translateY(70px);
+  transition: transform 500ms ease, background 500ms ease;
+  -webkit-transition: transform 500ms ease, background 500ms ease;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.96);
+  background: #1A0D01;
+}
+
+.header-area .main-header-area.sticky .main-menu {
+  padding: 0;
+}
+
+.header-area .main-header-area.sticky .header_bottom_border {
+  border-bottom: none;
+}
+.header-area .main-header-area.sticky .header_bottom_border.white_border {
+  border-bottom: none !important;
+}
+
+
+
+.header-area .header-top_area {
+  padding: 12px 0;
+  background: #001D38;
+}
+
+.header-area .main-header-area {
+  background: #fff;
+  background: transparent;
+  padding: 0 !important;
+}
+
+.header-area .main-header-area .logo {
+  text-align: left;
+}
+
+
+
+.header-area .main-header-area .Appointment .socail_links ul li a:hover {
+  color: #fff;
+}
+
+
+
+.header-area {
+  transition: top 0.3s ease;
+  background-color: darkcyan;
+}
+
+.bghead{
+  position: relative;
+  min-height: 100vh;
+  background-image: url('../imgs/bg1.jpg');
+  background-size: cover;
+
+}
+
+.text {
+  opacity: 0;
+  transition: opacity 1s ease; /* Анимация появления текста */
+  text-align: center;
+  padding-top: 200px;
+  font-size: 70px;
+  color: black;
+}
+
+.text b{
+  font-size: 80px;
+  color: red;
+}
+
+.visible {
+  opacity: 1;
+}

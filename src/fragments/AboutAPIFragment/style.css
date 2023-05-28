@@ -1,0 +1,44 @@
+.aboutTitle{
+    text-align: center;
+
+    margin-bottom: 50px;
+    height: 350px;
+    background-image: url("../../assets/imgs/bgabout1.jpg");
+    padding-top: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+.aboutTitle p{
+    font-size: 55px;
+    color: whitesmoke;
+    line-height: 70px;
+    font-weight: 600;
+    filter: brightness(1);
+}
+
+.aboutContainer{
+}
+
+.description{
+    margin-left: 40px;
+}
+
+.apiDescription{
+    display: flex;
+    vertical-align: center;
+}
+
+.apiDescription img{
+    width: 60%;
+}
+
+.galeryAbout{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.galeryAbout img{
+    width: 40%;
+}
