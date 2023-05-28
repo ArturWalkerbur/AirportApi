@@ -26,7 +26,7 @@ function Head() {
                                                 <ul id="navigation">
                                                     <li><a className="active" href="/">home</a></li>
                                                     <li><a href="/about">About API</a></li>
-                                                    <li><a href="#input-group">Search</a></li>
+                                                    <li><a href="/top_airports">TopAirports</a></li>
                                                 </ul>
                                             </nav>
                                         </div>

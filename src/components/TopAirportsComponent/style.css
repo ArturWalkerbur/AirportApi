@@ -1,0 +1,9 @@
+.topTitle{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.topTitle h1{
+    font-size: 48px;
+}
